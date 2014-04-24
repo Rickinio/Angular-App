@@ -1,0 +1,12 @@
+﻿<div ng-controller="ProductCtr">
+    <div>
+        <div ng-click="Load('Cosmetics')">Cosmetics</div>
+        <div ng-click="Load('FMCG')">FMCG</div>
+        <div ng-click="Load('House')">House</div>
+        <div ng-click="Load('Editorial')">Editorial</div>
+        <div ng-click="Load('New')">New</div>
+    </div>
+    <div>
+        <img style="width:100px;height:100px;" ng-repeat="photo in Photos" ng-src="http://idmembership/Photos/{{photo.Path}}" />
+    </div>
+</div>

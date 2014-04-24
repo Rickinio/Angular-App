@@ -1,0 +1,14 @@
+﻿
+    <div ng-controller="LoginCtr">
+        <div ng-init="Start()">
+            <form name="LoginForm" ng-submit="Submit()">
+                <label for="username">Enter Username</label>
+                <input id="username" type="text" placeholder="jondoe@example.gr" ng-model="loginData.username" />
+                <br />
+                <label for="password">Enter Password</label>
+                <input id="password" type="password" placeholder="password" ng-model="loginData.password" />
+                <br />
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+    </div>
